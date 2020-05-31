@@ -1,0 +1,7 @@
+body{
+    position: fixed;
+	width: 100%;
+	background-position: center 0%;
+	background-attachment: fixed;
+	height: 100%;
+}
