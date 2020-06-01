@@ -23,7 +23,7 @@
       <input type="email" id="email" required>
       <br>
 
-      <label for="age">What age are you at?</label>
+      <label for="option">What age are you at?</label>
       <br>
       <select id="age">
         <option value="under18">0-18</option>
@@ -58,7 +58,38 @@
         <br>
       </div>
 
-
+      <label for="reco">Who recommand this to you?/label>
+        <br>
+  
+        <div class="choice">
+          <input type="checkbox" name="firend" id="1" value="f">
+          <label for="f">Friend</label>
+          <br>
+  
+          <input type="checkbox" name="colleague" id="2" value="c">
+          <label for="c">Colleague</label>
+          <br>
+  
+          <input type="checkbox" name="classmate" id="3" value="cl">
+          <label for="cl">Classmate</label>
+          <br>
+  
+          <input type="checkbox" name="other" id="4" value="oth">
+          <label for="oth">Others</label>
+          <p></p>
+  
+        </div>
+  
+        <label for="others">Anything suggestion?</label>
+        <br>
+        <textarea name="other" id="comment" rows="3"></textarea>
+        <p></p>
+  
+        <input type="checkbox">
+        <label for="private">I accept the following <a target = "blank" href = "https://landingi.com/terms">terms of service</a>.</label>
+  
+        <button type="submit" onclick="display()">Submit</button>
+        <button type="reset">Reset</button>
 
 
 
