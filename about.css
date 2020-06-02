@@ -29,7 +29,27 @@ div.par{
   right:5%;
 }
 
+footer{
+  left: 20%; 
+  margin-top: 2%;
+  width: 100%;
+  margin-left: 5%;
+}
 
-p{
+div.end1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: antiquewhite;
+}
+
+img.info{
+  margin-top: 17%;
+  margin-left: 10%;
+}
+
+
+p.parag{
   text-indent: 2em;
 }
