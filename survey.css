@@ -100,3 +100,6 @@ button:hover{
 option:hover{
   background-color: rgb(143, 231, 194);
 }
+
+/*blank between navbar and form*/
+.top-blank{ background:transparent; margin:0 auto; width:100%; height:50px; padding:10px;}

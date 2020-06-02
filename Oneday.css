@@ -1,5 +1,6 @@
 
 body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin:0; 
 	padding:0;
 	background:url('https://unsplash.it/1600/900?random');  /*picture API*/
