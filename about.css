@@ -1,0 +1,26 @@
+body{
+}
+
+h1.title{
+  color: darkgray;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.subtitle{
+  background-color: aliceblue;
+}
+
+img.first{
+  width: 40%;
+}
+
+div{
+  color: antiquewhite;
+  float: left;
+}
+
+
+p{
+  text-indent: 2em;
+}
