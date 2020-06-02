@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="Oneday.css" type="text/css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head> 
-    <body> 
+    <body onload = "startTime(),countdown()"> 
         <div class="navbar">  <!--navigation bar   refresh_box News Weather ABOUT_US SURVEY-->
             <!--refresh box-->
             <div class="refresh-box">
@@ -31,15 +31,17 @@
             <div class="space"></div>
             <div class="contentclock">
                 <div class="leftspace"></div>
+                <script src="clock.js"></script>
                 <div class="clock">
-                    <div class="time">10:08</div>   <!--Finish CLOCK-->
+                    <div class="time" id = "clock"></div>   <!--Finish CLOCK-->
                 </div>
                 <div class="rightspace"></div>
             </div>
             <div class="space"></div>
             <!--bottom-blank-->
             <div class="blank">
-                <div class="countdown">Assignment deadline: 2 days</div>   <!--Maybe change to Pomodoro-->
+                <script src="countdown.js"></script>
+                <div class="countdown" >Assignment deadline: <span id="countdown"></span> days</div>   <!--Maybe change to Pomodoro-->
             </div> 
             <div class="footer"></div>    <!--Maybe add Todo_List in here-->
         </div>
