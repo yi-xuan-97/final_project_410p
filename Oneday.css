@@ -5,7 +5,7 @@ body{
 	padding:0;
 	background:url('https://unsplash.it/1600/900?random');  /*picture API*/
 }
-.navbar{ background:#5a5151; width:100%; height:50px; margin:0; opacity:0.6;}
+.navbar{ background:#5a5151; width:auto; height:50px; margin:0; opacity:0.6;}
 /*content*/
 .content{ background: transparent; width:100%; height:730px; margin:0 auto; }
 /*clock part*/
@@ -15,9 +15,9 @@ body{
 .rightspace{ background:transparent; width:24%; height:300px; float: left; border:2px solid transparent; padding: 2px; opacity: 0.2; margin: 2px;}
 /*other part*/
 .space{ background:transparent; width:auto; height:10px; margin:0 auto; opacity: 0.3;}
-.blank{ background:transparent; margin:0 auto; width:100%; height:150px; padding:10px;}
+.blank{ background:transparent; margin:0 auto; width:100%; height:150px; padding:0px;}
 .contenttwo{ background:#ffffff; width:auto; height:320px; margin:0 auto} /*not use now*/
-.footer{ background:transparent; width:100%; height:100px; margin:0 auto}
+.footer{ background:transparent; width:100%; height:80px; margin:0 auto}
 /*TIME*/
 .time{font-size:6.2cm;font-family:sans-serif;font-weight:bold; text-align:center; color: white;}
 /*COUNTDOWN*/
@@ -53,7 +53,7 @@ li a:hover{
 	padding: 2px;
 }
 .refresh-box:hover>.refresh-txt{
-	width:200px;
+	width:220px;
 	padding: 0 6px;
 	color: white;
 }
