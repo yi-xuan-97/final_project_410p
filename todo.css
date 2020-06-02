@@ -20,7 +20,7 @@ form{
 }
 
 legend{
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 35px;
   text-align: center;
 }
