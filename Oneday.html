@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Oneday Website</title>
-</head>
-<body>
-    <div class="body">
-        <img src="https://unsplash.it/1600/900?random">
-    </div>
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Oneday Website</title> 
+        <link rel="stylesheet" href="Oneday.css" type="text/css" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <body> 
+        <div class="navbar">  <!--navigation bar   refresh_box News Weather ABOUT_US-->
+            <!--refresh box-->
+            <div class="refresh-box">
+                <a class="refresh-btn" href=""> <!--refresh-->
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </a>
+                <div class="refresh-txt">
+                    Reflesh Background Picture
+                </div>
+            </div>
+            <ul>
+            <li><a href="#About_US">ABOUT_US</a></li>
+            <li><a href="#Weather_analysis">WEATHER</a></li>
+            <li><a href="#News">NEWS</a></li>
+            </ul>
+        </div>
+        <div class="space"></div>
+        <div class="content">
+            <div class="blank"></div> <!--top-blank-->
+            <div class="space"></div>
+            <div class="contentclock">
+                <div class="leftspace"></div>
+                <div class="clock">
+                    <div class="time">10:08</div>   <!--Finish CLOCK-->
+                </div>
+                <div class="rightspace"></div>
+            </div>
+            <div class="space"></div>
+            <!--bottom-blank-->
+            <div class="blank">
+                <div class="countdown">Assignment deadline: 2 days</div>   <!--Maybe change to Pomodoro-->
+            </div> 
+            <div class="footer"></div>    <!--Maybe add Todo_List in here-->
+        </div>
+    </body> 
 </html>
