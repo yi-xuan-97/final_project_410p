@@ -1,0 +1,102 @@
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url('https://unsplash.it/1600/900?random');
+  /* background-color: #4d3607; */
+}
+div{
+  margin:0px auto;
+}
+
+form{
+  max-width: 476px;
+  max-height: 768px;
+  width: auto;
+  height: auto;
+  background-color: rgb(243, 243, 243);
+  text-align: left;
+  border-radius: 6px;
+  padding: 20px;
+  border: none;
+  left: 50%;
+  margin: auto;
+  opacity: 0.8;
+
+}
+
+@media screen and (max-width:476px)
+{
+  .aform{width: 100%;}
+}
+
+@media screen  and(max-width:768p)
+{
+  .aform{width: 60%;}
+}
+
+label{
+  font-size: large;
+  font-weight: bolder;
+}
+
+
+input[type=text]{
+  width: 100%;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email]{
+  width: 100%;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+textarea{
+  width: 100%;
+}
+
+label{
+  font-size: small;
+  font: bolder;
+}
+
+legend{
+  letter-spacing: 0;
+  color: #4d3607;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-size: xx-large;
+  font: bolder;
+  text-align: center;
+}
+
+
+span{
+  font-size: smaller;
+  color: rgba(98, 98, 102, 0.438);
+}
+
+
+.choice label{
+  text-decoration: none;
+  font-weight: normal;
+}
+
+select{
+  width: 100%;
+}
+
+
+button{
+  width: 49%;
+  height: 30px;
+}
+
+button:hover{
+  background-color: #e7e5c0;
+}
+
+option:hover{
+  background-color: rgb(143, 231, 194);
+}
