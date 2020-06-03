@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Weather</title> 
-        <link rel="stylesheet" href="Oneday.css" type="text/css" /> 
-        <link rel="stylesheet" href="weather.css" type="text/css" /> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head> 
-    <body> 
-        <div class="navbar">  <!--navigation bar   refresh_box News Weather ABOUT_US SURVEY-->
-            <!--refresh box-->
-            <div class="refresh-box">
-                <a class="refresh-btn" href=""> <!--refresh-->
-                    <i class="fa fa-refresh" aria-hidden="true"></i>
-                </a>
-                <div class="refresh-txt">
-                    Refresh Background Picture
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Oneday.css" type="text/css" />
+    <link rel="stylesheet" href="weather.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <!--navigation bar   refresh_box News Weather ABOUT_US SURVEY-->
+        <!--refresh box-->
+        <div class="refresh-box">
+            <a class="refresh-btn" href="">
+                <!--refresh-->
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </a>
+            <div class="refresh-txt">
+                Refresh Background Picture
             </div>
-            <ul>
+        </div>
+        <ul>
             <li><a href="survey.html">SURVEY</a></li>
             <li><a href="about.html">ABOUT_US</a></li>
             <li><a href="weather.html">WEATHER</a></li>
             <li><a href="news.html">NEWS</a></li>
             <li><a href="Oneday.html">HOME</a></li>
-            </ul>
-        </div>
-<!-- *******************SEPERATION LINE*************************************** -->
-        
+        </ul>
+    </div>
+    <!-- *******************SEPERATION LINE*************************************** -->
+    <section class="container border rounded bg-light w-50 mx-auto mt-5 p-3" id="contain">
+      <h2 class="my-4">Charts - Bar Chart</h2>
+      <canvas id="myChart" aria-label="donut chart" role="img"></canvas>
+    </section>
 
-        
+    <canvas id="myChart" aria-label="bar chart" role="img"></canvas>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="weather.js"></script>
+</body>
 
-        <script src="weather.js"></script>
-    </body>
 </html>
