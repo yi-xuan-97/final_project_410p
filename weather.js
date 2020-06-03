@@ -23,14 +23,14 @@ var ctx = document.getElementById("myChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Temporature', 'Feel Like', 'Lowest Temp', 'Highest Temp', '', 'orange', 'unknown'],
+    labels: ['Temporature', 'Feel Like', 'Lowest Temp', 'Highest Temp', 'Mcomfort', 'mconfort'],
     datasets: [{
       label: 'Weather Infor',
       barPercentage: 0.5,
       barThickness: 4,
       maxBarThickness: 8,
       minBarLength: 2,
-      data: [95, 20, 30, 40, 50, 60, 70],
+      data: [289.4, 285.4, 288.7, 290.3, 295.1, 300.1],
       backgroundColor: [
         'rgba(54, 162, 235, 0.8)',
         'rgba(255, 206, 86, 0.8)',
@@ -38,7 +38,7 @@ var myBarChart = new Chart(ctx, {
         'rgba(75, 192, 192, 0.8)',
         'rgba(153, 102, 255, 0.8)',
         'rgba(255, 159, 64, 0.8)',
-        'rgba(199, 199, 199, 0.8)',
+        // 'rgba(199, 199, 199, 0.8)',
       ]
     }]
   },
