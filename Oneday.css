@@ -5,41 +5,115 @@ body{
 	padding:0;
 	background:url('https://unsplash.it/1600/900?random');  /*picture API*/
 }
-.navbar{ background:#5a5151; width:auto; height:50px; margin:0; opacity:0.6;}
+.navbar{ 
+	background:#5a5151; 
+	width:auto; 
+	height:50px; 
+	margin:0; 
+	opacity:0.7;
+}
 /*content*/
-.content{ background: transparent; width:100%; height:730px; margin:0 auto; }
+.content{ 
+	background: transparent; 
+	width:100%; 
+	height:730px; 
+	margin:0 auto; 
+}
 /*clock part*/
-.contentclock{ background:transparent; width:auto; height:310px; padding-top: 1%;}
-.leftspace{ background:transparent; width:24%; height:300px; float:left; border:2px solid transparent; padding: 2px; opacity: 0.2; margin: 2px;}
-.clock{ background:transparent; width:49%; height:290px; float:left;border-radius: 25px; border:6px solid white; padding: 2px; margin: 2px; opacity: 1;}
-.rightspace{ background:transparent; width:24%; height:300px; float: left; border:2px solid transparent; padding: 2px; opacity: 0.2; margin: 2px;}
+.contentclock{ 
+	background:transparent; 
+	width:auto; 
+	height:310px; 
+	padding-top: 1%;
+}
+.leftspace{ 
+	background:transparent; 
+	width:24%; 
+	height:300px; 
+	float:left; 
+	border:2px solid transparent; 
+	padding: 2px; 
+	opacity: 0.2; 
+	margin: 2px;
+}
+.clock{ 
+	background:transparent; 
+	width:49%; 
+	height:290px; 
+	float:left; 
+	border-radius: 25px; 
+	border:6px solid white; 
+	padding: 2px; 
+	margin: 2px; 
+	opacity: 1;
+}
+.rightspace{ 
+	background:transparent; 
+	width:24%; height:300px; 
+	float: left; 
+	border:2px solid transparent; 
+	padding: 2px; 
+	opacity: 0.2; 
+	margin: 2px;
+}
 /*other part*/
-.space{ background:transparent; width:auto; height:10px; margin:0 auto; opacity: 0.3;}
-.blank{ background:transparent; margin:0 auto; width:100%; height:150px; padding:0px;}
-.contenttwo{ background:#ffffff; width:auto; height:320px; margin:0 auto} /*not use now*/
-.footer{ background:transparent; width:100%; height:80px; margin:0 auto}
+.space{ 
+	background:transparent; 
+	width:auto; 
+	height:autopx; 
+	margin:0 auto; 
+	opacity: 0.7;
+}
+.blank{ 
+	background:transparent;
+	margin:0 auto; 
+	width:100%; 
+	height:150px; 
+	padding:0px;
+}	
+.contenttwo{ 
+	background:#ffffff; width:auto; height:320px; margin:0 auto} /*not use now*/
+/*footer*/
+.footer{ 
+	background:transparent; 
+	width:100%; 
+	height:80px; 
+	margin:0 auto
+}
 /*TIME*/
-.time{font-size:6.2cm;font-family:sans-serif;font-weight:bold; text-align:center; color: white;}
+.time{
+	font-size:6.2cm;
+	font-family:sans-serif;
+	font-weight:bold; 
+	text-align:center; 
+	color: white;
+}
 /*COUNTDOWN*/
-.countdown{font-size:2.2cm;font-family:sans-serif;font-weight:bold; text-align:center; color: white;}
+.countdown{
+	font-size:2.2cm;
+	font-family:sans-serif;
+	font-weight:bold; 
+	text-align:center; 
+	color: white;
+}
 /*navbar*/
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+	overflow: hidden;
 }
-li {
+.navbar li {
     float: right;
 }
-li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 20px;
     text-decoration: none;
 }
-li a:hover{
+.navbar li a:hover{
     background-color: #111;
 }
 /*refresh box*/

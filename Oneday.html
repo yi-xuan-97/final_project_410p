@@ -4,7 +4,16 @@
         <meta charset="utf-8">
         <title>Oneday Website</title> 
         <link rel="stylesheet" href="Oneday.css" type="text/css" /> 
+        <link rel="stylesheet" href="list.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script> 
+        $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+        });
+        </script>
     </head> 
     <body onload = "startTime(),countdown()"> 
         <div class="navbar">  <!--navigation bar   refresh_box News Weather ABOUT_US SURVEY-->
@@ -25,7 +34,28 @@
             <li><a href="Oneday.html">HOME</a></li>
             </ul>
         </div>
-        <div class="space"></div>
+        <div class="space">
+            <!--to do list-->
+            <div id="flip">TODO</div>
+            <div id="panel">
+                <div class="todobody">
+                    <div id="myDIV" class="header">
+                        <h2>To Do List</h2>
+                        <input class= "box" type="text" id="myInput" placeholder="Type you event">
+                        <a onclick="newElement()" class="add-btn" >
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="checkbody">
+                        <ul id="myUL">
+                            <li>Finish Project 3</li>
+                            <li>read book</li>
+                        </ul>
+                    </div>
+                    <script src="todolist.js"></script>
+                </todobody>
+            </div>
+        </div>
         <div class="content">
             <div class="blank"></div> <!--top-blank-->
             <div class="space"></div>

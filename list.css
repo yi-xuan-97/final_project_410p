@@ -1,0 +1,114 @@
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin:0; 
+    padding:0;
+}
+.todobody {
+    width: 340px;
+    height:450px;
+    border: #696868;
+    border-width: 1px;
+    border-style: solid;
+}
+.header{
+    background-color: #665b5a;
+    width: 100%;
+    height:28%;
+    padding: 3px 4px;
+    color: white;
+    text-align: center;
+}
+.box{
+    margin-left: 10px;
+    border: none;
+    border-radius: 0;
+    width: 80%;
+    height:24%;
+    padding: 1px;
+    float: center;
+    font-size: 10px;
+}
+.add-btn{
+    color: white;
+    float: right;
+    padding: 6px 0 0 0;
+    width: 10%;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+.add-btn:hover {
+  color: gainsboro;
+  opacity: 0.7;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover {
+    color: red;
+    opacity: 0.7;
+}
+.checkbody{
+    background-color: gainsboro;
+    padding:  0;
+    float:left;
+    width: 100%;
+    height:72%;
+    color: black;
+    text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.checkbody ul {
+  margin: 0;
+  padding: 0;
+}
+.checkbody ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 15px;
+  transition: 0.2s;
+  border: #888;
+  border-style: solid; 
+  border-width: 0px;
+  border-bottom-width: 1px;
+}
+.checkbody ul li:hover {
+  background: #ddd;
+}
+.checkbody ul li.checked {
+  background: #888;
+  color: #fff;
+  content: none;
+  /*text-decoration: line-through;*/
+  text-decoration: none;
+}
+
+#flip
+{
+    padding:2px;
+    width: 54px;
+    height:24px;
+	text-align:center;
+	background-color:transparent;
+    border:solid 1px white;
+    border-radius: 10px;
+    color:white;
+}
+#panel
+{
+	padding:2px;
+    display:none;
+    text-align:center;
+	background-color:transparent;
+}
