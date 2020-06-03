@@ -7,7 +7,7 @@
     opacity: 0.9;
 }
 .contentnews{ 
-    background:gainsboro; 
+    background:transparent; 
     width:auto; 
     height:360px; 
     padding-top: 1%; 
@@ -24,7 +24,7 @@
     margin: 2px;
 }
 .midspace{ 
-    background:transparent; 
+    background:gainsboro; 
     width:34%; 
     height:330px; 
     float:left; 
@@ -42,7 +42,7 @@
     opacity: 0.2;
 }
 .blank{ 
-    background:gainsboro; 
+    background:transparent; 
     margin:0 auto; 
     width:100%; 
     height:40px; 
@@ -53,29 +53,31 @@
 .news-picture{
     background: ghostwhite; 
     width:auto; 
-    height:250px; 
+    height:265px; 
     margin: 2px; 
     padding: 2px;
 }
 .news-title{
     background: transparent; 
     width:auto; 
-    height:35px; 
+    height:25px; 
     margin: 2px; 
     padding: 2px; 
-    opacity:1;
+    opacity:0.9;
 }
 .news-url{
     background: transparent; 
     width:auto; 
     height:20px; 
     margin: 2px; 
-    padding: 2px;}
+    padding: 2px;
+    opacity: 0.9;
+}
 news-font{
     font-size: large;
 }
 large{
-    color:black;
+    color:white;
     font-weight:bold;
-    font-size: xx-large;
+    font-size: 310%;
 }
