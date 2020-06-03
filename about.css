@@ -67,7 +67,8 @@ p.parag{
   padding: 10px;
 }
 .sub{
-  text-align: center;
+  text-indent: 3em;
+  text-align: left;
   background:transparent;
   opacity: 0.7;
 	margin:0 auto; 
