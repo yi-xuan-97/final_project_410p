@@ -99,16 +99,16 @@ body{
     padding:2px;
     width: 54px;
     height:24px;
-	text-align:center;
-	background-color:transparent;
+	  text-align:center;
+  	background-color:transparent;
     border:solid 1px white;
     border-radius: 10px;
     color:white;
 }
 #panel
 {
-	padding:2px;
+  	padding:2px;
     display:none;
     text-align:center;
-	background-color:transparent;
+  	background-color:transparent;
 }
