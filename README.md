@@ -7,12 +7,18 @@ I used Chart.js library in weather .
 
 ## API
 news: https://newsapi.org/docs/get-started
+
 picture: https://unsplash.it/1600/900?random
+
 weather: ...
 
 ## Features
 Todo List：display, hide, add, delete
+
 Refresh background image button：dynamic
+
 Clock: display the hour and minute of the current time
+
 Countdown: shows how many days are left before the target time (the target time is set in the .js file)
+
 News: Randomly display 4 news
