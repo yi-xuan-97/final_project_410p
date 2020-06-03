@@ -1,23 +1,31 @@
 var url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=677b08102882beabdba992496310ea0c';
 
-fetch(url)
-  .then(response => {
-    console.log('request successful', response);
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.log('request failed', error);
-  })
+var curr=0;
+let getDataPromise = (url) => {
+
+  fetch(url)
+    .then(response => {
+      console.log('request successful', response);
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.log('request failed', error);
+    })
+
+}
+
+getDataPromise(url);
 
 var ctx = document.getElementById("myChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['bluuuuue', 'yellow', 'red', 'teal', 'purple', 'orange', 'unknown'],
+    labels: ['Temporature', 'Feel Like', 'Lowest Temp', 'Highest Temp', '', 'orange', 'unknown'],
     datasets: [{
+      label: 'Weather Infor',
       barPercentage: 0.5,
       barThickness: 4,
       maxBarThickness: 8,
@@ -34,7 +42,7 @@ var myBarChart = new Chart(ctx, {
       ]
     }]
   },
-  options:{
+  options: {
     scales: {
       xAxes: [{
         gridLines: {
