@@ -1,6 +1,7 @@
-var url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=677b08102882beabdba992496310ea0c';
+var url = 'https://api.openweathermap.org/data/2.5/weather?q=Portland&appid=677b08102882beabdba992496310ea0c';
+// var url1 = 'https://api.openweathermap.org/data/2.5/onecall?lat=51.51&lon=-0.13&exclude=hourly,daily&appid=677b08102882beabdba992496310ea0c';
+var url1 = 'https://api.openweathermap.org/data/2.5/onecall?lat=45.52&lon=-122.68&appid=677b08102882beabdba992496310ea0c';
 
-var curr = 0;
 let getDataPromise = (url) => {
 
   fetch(url)
@@ -58,6 +59,60 @@ let getDataPromise = (url) => {
 }
 
 getDataPromise(url);
+
+
+let getDataPromise1 = (url1) => {
+
+  fetch(url1)
+    .then(response => {
+      console.log('request successful', response);
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+
+      const temp = [];
+      var i;
+      for (i = 0; i < 7; ++i) {
+        temp[i] = data['daily'][i + 1]['temp']['day'];
+        console.log(temp[i]);
+      }
+
+      var ctx1 = document.getElementById("myChart1");
+      var myLineChart = new Chart(ctx1, {
+        type: 'line',
+        data: {
+          labels: ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven'],
+          datasets: [{
+            label: 'Future seven days forcast',
+            data: [temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6]],
+            borderColor: 'rgb(0, 128, 128)',
+            pointStyle:'star',
+          }]
+
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              beginAtZero: false
+            }]
+          }
+        }
+      });
+
+
+
+
+
+
+    })
+    .catch(error => {
+      console.log('request failed', error);
+    })
+
+}
+
+getDataPromise1(url1);
 
 
 
