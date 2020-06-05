@@ -73,8 +73,8 @@ let getDataPromise1 = (url1) => {
 
       const temp = [];
       var i;
-      for (i = 0; i < 7; ++i) {
-        temp[i] = data['daily'][i + 1]['temp']['day'];
+      for (i = 0; i < 8; ++i) {
+        temp[i] = data['daily'][i]['temp']['day'];
         console.log(temp[i]);
       }
 
@@ -82,10 +82,10 @@ let getDataPromise1 = (url1) => {
       var myLineChart = new Chart(ctx1, {
         type: 'line',
         data: {
-          labels: ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven'],
+          labels: ['Today','One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven'],
           datasets: [{
             label: 'Future seven days forcast',
-            data: [temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6]],
+            data: [temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6],temp[7]],
             borderColor: 'rgb(0, 128, 128)',
             pointStyle:'star',
           }]
