@@ -12,7 +12,7 @@ let getDataPromise = (url) => {
       var t1 = data.main.temp;
       var t2 = data.main.feels_like;
       var t3 = data.main.temp_min;
-      var t4 = data.main.temp_min;
+      var t4 = data.main.temp_max;
 
       var ctx = document.getElementById("myChart");
       var myBarChart = new Chart(ctx, {
@@ -24,8 +24,7 @@ let getDataPromise = (url) => {
             barPercentage: 0.5,
             barThickness: 4,
             maxBarThickness: 8,
-            minBarLength: 2,
-            //data: [289.4, 285.4, 288.7, 290.3, 295.1, 300.1],
+            minBarLength: 4,
             data: [t1, t2, t3, t4, 295.1, 300.1],
             backgroundColor: [
               'rgba(54, 162, 235, 0.8)',
@@ -34,7 +33,6 @@ let getDataPromise = (url) => {
               'rgba(75, 192, 192, 0.8)',
               'rgba(153, 102, 255, 0.8)',
               'rgba(255, 159, 64, 0.8)',
-              // 'rgba(199, 199, 199, 0.8)',
             ]
           }]
         },
@@ -44,6 +42,9 @@ let getDataPromise = (url) => {
               gridLines: {
                 offsetGridLines: true
               }
+            }],
+            yAxes: [{
+              beginAtZero: false
             }]
           }
         }

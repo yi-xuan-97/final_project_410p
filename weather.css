@@ -1,4 +1,14 @@
 
 body{
-  
+  margin: auto;
+}
+
+canvas{
+  max-height: 89%;
+  background-color: aliceblue;
+}
+
+.chart{
+  display: block;
+  margin:0 auto;
 }

@@ -22,3 +22,6 @@ Clock: display the hour and minute of the current time
 Countdown: shows how many days are left before the target time (the target time is set in the .js file)
 
 News: Randomly display 4 news
+
+##Inorder to user our application you may need to install
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf/related
