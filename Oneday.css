@@ -39,10 +39,11 @@ body{
 .clock{ 
 	background:transparent; 
 	width:49%; 
+	/*width:auto;*/
 	height:290px; 
 	float:left; 
 	border-radius: 25px; 
-	border:6px solid white; 
+	/*border:6px solid white; */
 	padding: 2px; 
 	margin: 2px; 
 	opacity: 1;
