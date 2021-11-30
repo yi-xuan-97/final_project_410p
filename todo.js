@@ -1,6 +1,7 @@
 var sub = document.getElementById("list");
 var checkbox;
 
+//Once user click on button submitted, it will append user input into the list
 sub.onclick = function () {
 
   var todo = document.getElementById("alist").value;
