@@ -1,5 +1,4 @@
 var sub = document.getElementById("list");
-// var timer = setInterval(helper, num*1000);
 var chec;
 
 sub.onclick = function () {
