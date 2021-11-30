@@ -1,5 +1,5 @@
 var sub = document.getElementById("list");
-var chec;
+var checkbox;
 
 sub.onclick = function () {
 
@@ -12,11 +12,11 @@ sub.onclick = function () {
   final.innerHTML = todo;
   document.getElementById("aform").appendChild(final);
 
-  chec = document.createElement("input");
-  chec.id = "but";
-  chec.type = "checkbox";
-  chec.style = "display:none";
-  document.getElementById("aform").appendChild(chec);
+  checkbox = document.createElement("input");
+  checkbox.id = "but";
+  checkbox.type = "checkbox";
+  checkbox.style = "display:none";
+  document.getElementById("aform").appendChild(checkbox);
 
   var brea = document.createElement("br");
   document.getElementById("aform").appendChild(brea);
