@@ -5,14 +5,15 @@ var checkbox;
 sub.onclick = function () {
 
   var todo = document.getElementById("alist").value;
-
   var final = document.createElement("label");
 
+  //Append the final result from input box as label
   final.style = "display:block; padding-left:25px; font-size:22px;";
   final.htmlFor = "but";
   final.innerHTML = todo;
   document.getElementById("aform").appendChild(final);
 
+  //Append a checkbox within the form
   checkbox = document.createElement("input");
   checkbox.id = "but";
   checkbox.type = "checkbox";
