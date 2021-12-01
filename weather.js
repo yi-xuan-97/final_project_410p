@@ -1,6 +1,8 @@
+//Crating analysis graph from data fetching from API
 var url = 'https://api.openweathermap.org/data/2.5/weather?q=Portland&appid=677b08102882beabdba992496310ea0c';
 var url1 = 'https://api.openweathermap.org/data/2.5/onecall?lat=45.52&lon=-122.68&appid=677b08102882beabdba992496310ea0c';
 
+//Getting analysis graph of temporature changes within same day
 let getDataPromise = (url) => {
 
   fetch(url)
@@ -59,7 +61,7 @@ let getDataPromise = (url) => {
 
 getDataPromise(url);
 
-
+//Getting analysis graph of the week of temporature 
 let getDataPromise1 = (url1) => {
 
   fetch(url1)
