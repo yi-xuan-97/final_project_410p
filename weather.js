@@ -100,12 +100,6 @@ let getDataPromise1 = (url1) => {
           }
         }
       });
-
-
-
-
-
-
     })
     .catch(error => {
       console.log('request failed', error);
