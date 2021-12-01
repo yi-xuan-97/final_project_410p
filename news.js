@@ -8,7 +8,7 @@
         return response.json();
     })
     .then(data=> {
-        console.log(data)
+          console.log(data)
           let r = Math.ceil(Math.random()*6);  
           console.log(r) 
           var news_title = document.createElement("news-font");
