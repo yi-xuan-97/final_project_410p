@@ -20,8 +20,5 @@ sub.onclick = function () {
   checkbox.style = "display:none";
   document.getElementById("aform").appendChild(checkbox);
 
-  var brea = document.createElement("br");
-  document.getElementById("aform").appendChild(brea);
-
   document.getElementById("alist").value = '';
 }
