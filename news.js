@@ -9,11 +9,11 @@
     })
     .then(data=> {
           console.log(data)
-          let r = Math.ceil(Math.random()*6);  
-          console.log(r) 
+          let randomNumber = Math.ceil(Math.random()*6);  
+          console.log(randomNumber) 
 
           for(let i=0; i < 4; ++i)
-            createNewsElement(data, r+i, i);
+            createNewsElement(data, randomNumber+i, i);
             
     })
       .catch(error=> {
@@ -21,20 +21,20 @@
     });
 
 
-function createNewsElement(data, r, i) {
+function createNewsElement(data, randomNumber, i) {
   console.log(i);
   var news_title = document.createElement("news-font");
-  console.log(r);
-  news_title.innerHTML = data.articles[r].title;
+  console.log(randomNumber);
+  news_title.innerHTML = data.articles[randomNumber].title;
   document.getElementById("news-title" + i).appendChild(news_title);
   console.log(news_title);
   let news_picture = document.createElement("img");
-  news_picture.src = data.articles[r].urlToImage;
+  news_picture.src = data.articles[randomNumber].urlToImage;
   document.getElementById("news-picture" + i).appendChild(news_picture);
   console.log(news_picture);
   let news_url = document.createElement("a");
-  news_url.href = data.articles[r].url;
-  news_url.innerHTML = data.articles[r].url;
+  news_url.href = data.articles[randomNumber].url;
+  news_url.innerHTML = data.articles[randomNumber].url;
   document.getElementById("news-url" + i).appendChild(news_url);
   console.log(news_url);
 }
