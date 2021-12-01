@@ -12,7 +12,7 @@
           for(let i=0; i < 4; ++i)
             createNewsElement(data, randomNumber+i, i);      
     })
-      .catch(error=> {
+    .catch(error=> {
         console.log('fail\n', error);
     });
 
