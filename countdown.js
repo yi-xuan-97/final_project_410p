@@ -1,10 +1,14 @@
 function countdown () 
 {
-    var curtime = new Date();//curr time
+    var curTime = new Date();
     //---------change the date in here---------
-    var endtime = new Date("2020,6,13");//end time
-    var lefttime = Math.ceil((endtime.getTime() - curtime.getTime())/(24*60*60*1000));
+    var endTime = new Date("2020,6,13");
+    var leftTime = LeftTime();
 
-    document.getElementById("countdown").innerHTML = lefttime;
+    document.getElementById("countdown").innerHTML = leftTime;
+    
+    function LeftTime() {
+        return Math.ceil((endtime.getTime() - curtime.getTime()) / (24 * 60 * 60 * 1000));
+    }
 }
 
