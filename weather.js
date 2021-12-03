@@ -21,7 +21,7 @@ let getDataPromiseBar = (urlBar) => {
       var charName = 'Weather Info';
 
       const ctxBar = document.getElementById("myChart");
-      createBarChart(ctxBar, charType, charName, barLabels, barData, barBackgroundColor);
+      createBarChart(ctxBar, charName, barLabels, barData, barBackgroundColor);
     })
     .catch(error => {
       console.log('request failed', error);
