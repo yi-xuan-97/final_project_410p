@@ -8,7 +8,7 @@ function countdown ()
     document.getElementById("countdown").innerHTML = leftTime;
     
     function LeftTime() {
-        return Math.ceil((endtime.getTime() - curtime.getTime()) / (24 * 60 * 60 * 1000));
+        return Math.ceil((endTime.getTime() - curTime.getTime()) / (24 * 60 * 60 * 1000));
     }
 }
 
