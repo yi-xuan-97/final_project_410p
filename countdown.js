@@ -2,7 +2,7 @@ function countdown ()
 {
     var curTime = new Date();
     //---------change the date in here---------
-    var endTime = new Date("2020,6,13");
+    var endTime = new Date("2021,12,3");
 
     document.getElementById("countdown").innerHTML = LeftTime();
     
